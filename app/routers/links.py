@@ -9,7 +9,8 @@ from app.auth import get_current_user
 from app.models import User
 from typing import Optional
 from datetime import datetime, timezone
-from app.config import CLEANUP_THRESHOLD_DAYS
+#from app.config import CLEANUP_THRESHOLD_DAYS
+from app.config import settings
 from typing import List
 from app.redis import redis_client
 
@@ -135,6 +136,6 @@ async def cleanup_unused_links(
     db: AsyncSession = Depends(get_db),
     current_user: models.User = Depends(get_current_user)
 ):
-    await crud.delete_unused_links(db, CLEANUP_THRESHOLD_DAYS)
+    await crud.delete_unused_links(db, settings.CLEANUP_THRESHOLD_DAYS)
     return
 
