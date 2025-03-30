@@ -6,9 +6,7 @@ dist/
 build/
 
 .env
-.env.*
-
-alembic/versions/
+!.env.example
 
 .vscode/
 .idea/
