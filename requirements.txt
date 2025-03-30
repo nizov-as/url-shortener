@@ -3,7 +3,7 @@ uvicorn[standard]
 sqlalchemy
 asyncpg
 alembic
-pydantic
+pydantic>=2.0
 python-jose
 passlib[bcrypt]
 python-dotenv
@@ -11,3 +11,4 @@ aioredis
 psycopg2-binary
 python-multipart
 redis[asyncio]
+pydantic-settings
