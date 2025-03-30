@@ -63,7 +63,7 @@ def run_migrations_online() -> None:
 
     """
     connectable = create_engine(
-        config.get_main_option("sqlalchemy.url"),
+        settings.SYNC_DATABASE_URL,
         poolclass=pool.NullPool
     )
 
