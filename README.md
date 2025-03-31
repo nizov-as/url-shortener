@@ -98,21 +98,6 @@ GET /links/myalias → 307 Redirect → https://example.com
 
 ---
 
-## ⚙️ Переменные окружения (`.env.example`)
-
-```env
-DATABASE_URL=postgresql+asyncpg://user:password@localhost:5432/dbname
-SYNC_DATABASE_URL=postgresql://user:password@localhost:5432/dbname
-REDIS_URL=redis://localhost:6379
-
-SECRET_KEY=your-secret-key
-ALGORITHM=HS256
-ACCESS_TOKEN_EXPIRE_MINUTES=30
-CLEANUP_THRESHOLD_DAYS=30
-```
-
----
-
 ## 🗄️ Структура базы данных
 
 **Таблица users**
