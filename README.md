@@ -51,6 +51,17 @@ cp .env.example .env
 
 Заполни актуальные данные (например, подключение к БД, ключи и т.п.)
 
+Пример значений:
+```bash
+DATABASE_URL=postgresql+asyncpg://postgres:postgres@db:5432/url_shortener
+SYNC_DATABASE_URL=postgresql://postgres:postgres@db:5432/url_shortener
+REDIS_URL=redis://redis:6379
+SECRET_KEY=supersecretkey
+ALGORITHM=HS256
+ACCESS_TOKEN_EXPIRE_MINUTES=30
+CLEANUP_THRESHOLD_DAYS=30
+```
+
 ---
 
 ### 3. Запусти проект через Docker
@@ -83,13 +94,6 @@ Content-Type: application/json
 
 ```http
 GET /links/myalias → 307 Redirect → https://example.com
-```
-
-**Удаление ссылки:**
-
-```http
-DELETE /links/myalias
-Authorization: Bearer <token>
 ```
 
 ---
