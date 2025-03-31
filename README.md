@@ -96,6 +96,10 @@ Content-Type: application/json
 GET /links/myalias → 307 Redirect → https://example.com
 ```
 
+**Redis кэш:**
+
+Редирект по myalias второй раз быстрее (идёт через Redis)
+
 ---
 
 ## 🗄️ Структура базы данных
