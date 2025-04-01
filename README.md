@@ -1,6 +1,8 @@
 
 # ✂️ URL Shortener API
 
+Дисклеймер: README.md сгенерирован с помощью Chat GPT для ускорения процесса :)
+
 Простой и удобный сервис для сокращения ссылок, с авторизацией, аналитикой, сроками действия и кэшированием.  
 Разработан с использованием **FastAPI**, **PostgreSQL**, **Redis**, **Docker**, **Pydantic v2** и других технологий.
 
@@ -138,6 +140,16 @@ GET /links/myalias → 307 Redirect → https://example.com
 ```bash
 docker-compose -f docker-compose.test.yml up --build
 ```
+
+### Покрытие тестами:
+
+По этой ссылке: file:///Users/alexandernizov/Desktop/url_shortener/htmlcov/htmlcov/index.html
+
+### Подробнее про запуск тестов:
+
+В файле TESTING.md
+
+
 
 ---
 
