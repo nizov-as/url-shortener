@@ -128,6 +128,18 @@ GET /links/myalias → 307 Redirect → https://example.com
 
 ---
 
+## Тестирование
+
+Фреймворк: `pytest` с `pytest-asyncio`  
+Изолированная среда тестирования развёрнута через `docker-compose`.
+
+### Запуск тестов:
+
+```bash
+docker-compose -f docker-compose.test.yml up --build
+
+---
+
 ## 👨‍💻 Автор
 
 Created by [nizov-as](https://github.com/nizov-as)
