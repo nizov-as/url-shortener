@@ -137,6 +137,7 @@ GET /links/myalias → 307 Redirect → https://example.com
 
 ```bash
 docker-compose -f docker-compose.test.yml up --build
+```
 
 ---
 
