@@ -143,7 +143,7 @@ docker-compose -f docker-compose.test.yml up --build
 
 ### Покрытие тестами:
 
-По этой ссылке: [file:///Users/alexandernizov/Desktop/url_shortener/htmlcov/htmlcov/index.html](file:///Users/alexandernizov/Desktop/url_shortener/htmlcov/htmlcov/index.html)
+[По этой ссылке](file:///Users/alexandernizov/Desktop/url_shortener/htmlcov/htmlcov/index.html): [file:///Users/alexandernizov/Desktop/url_shortener/htmlcov/htmlcov/index.html](file:///Users/alexandernizov/Desktop/url_shortener/htmlcov/htmlcov/index.html)
 
 ### Подробнее про запуск тестов:
 
